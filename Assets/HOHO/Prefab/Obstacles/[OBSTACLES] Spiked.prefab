@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4172385286023905219}
   - component: {fileID: 2162780081105505033}
   - component: {fileID: 8906168091503194644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: '[OBSTACLES] Spiked'
   m_TagString: Deadzone
   m_Icon: {fileID: 0}
