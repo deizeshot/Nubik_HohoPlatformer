@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 7cff6cd202ac14aa3bd84bb5d3080788
 ModelImporter:
-  serializedVersion: 20200
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       74: 6059336001588132254
@@ -12,7 +12,17 @@ ModelImporter:
   - first:
       74: 8349542763059015795
     second: Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Block
+    second: {fileID: 2100000, guid: 054840a88c3b840bba4752d56150b5e8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: -6478536213147159724, guid: 356724107d6b44017b9611b3abd57d08, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -23,8 +33,10 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftUpperLeg' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -32,7 +44,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -139,6 +151,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 2
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -150,6 +163,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
+    optimizeBones: 1
     meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
@@ -173,7 +187,97 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: EnemyMushroom(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Bone
+      parentName: Armature
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.001
+      parentName: Bone
+      position: {x: -0, y: 0.003335641, z: 0}
+      rotation: {x: -0.017231748, y: 0.016548328, z: 0.004621217, w: 0.99970394}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.002
+      parentName: Bone.001
+      position: {x: 3.4924596e-12, y: 0.0031082726, z: -3.4197e-12}
+      rotation: {x: 9.385985e-10, y: -9.159893e-27, z: -1.7462298e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.003
+      parentName: Bone.002
+      position: {x: 1.5716067e-11, y: 0.0027337833, z: 4.7293724e-11}
+      rotation: {x: 9.458745e-10, y: 3.1363378e-27, z: -2.0372681e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.003_end
+      parentName: Bone.003
+      position: {x: 1.5133991e-11, y: 0.005167972, z: 5.820766e-13}
+      rotation: {x: 9.458745e-10, y: -9.313226e-10, z: -2.3283064e-10, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone.003_end_end
+      parentName: Bone.003_end
+      position: {x: -0, y: 0.005167972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cone.005
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0.81349677, y: 1.3248092, z: -0.43474162}
+      rotation: {x: -0.7584252, y: -0.1521805, z: 0.16054857, w: 0.6130714}
+      scale: {x: 16.357887, y: 17.10755, z: 25.256353}
+    - name: Cone.006
+      parentName: EnemyMushroom(Clone)
+      position: {x: 0.79436964, y: 1.4105946, z: -0.16009365}
+      rotation: {x: -0.7162214, y: 0.05802721, z: -0.25851518, w: 0.64562345}
+      scale: {x: 16.357885, y: 17.107544, z: 25.256351}
+    - name: Spiked Mushroon
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 30.205675, y: 30.205675, z: 30.205675}
+    - name: Cone.007
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0.39739364, y: 1.4055105, z: 0.63375294}
+      rotation: {x: -0.54958767, y: -0.22699271, z: -0.07328518, w: 0.80066043}
+      scale: {x: 12.427293, y: 12.9968195, z: 19.18757}
+    - name: Cone.008
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0.7959435, y: 1.3740907, z: 0.12543412}
+      rotation: {x: -0.61764264, y: -0.3292383, z: -0.022719491, w: 0.7138652}
+      scale: {x: 16.357885, y: 17.107546, z: 25.256353}
+    - name: Cone.009
+      parentName: EnemyMushroom(Clone)
+      position: {x: 0.30969298, y: 1.5431387, z: -0.43595394}
+      rotation: {x: -0.82087505, y: -0.07181205, z: -0.24783713, w: 0.5094938}
+      scale: {x: 16.357885, y: 17.107544, z: 25.25635}
+    - name: Cone.010
+      parentName: EnemyMushroom(Clone)
+      position: {x: 0.13138574, y: 1.3055159, z: -0.9035079}
+      rotation: {x: 0.88844544, y: 0.014159679, z: 0.08495757, w: -0.4508287}
+      scale: {x: 16.357887, y: 17.107548, z: 25.256353}
+    - name: Cone.011
+      parentName: EnemyMushroom(Clone)
+      position: {x: 0.39596477, y: 1.5066508, z: 0.60198826}
+      rotation: {x: -0.6189725, y: -0.031058047, z: -0.22384048, w: 0.7521994}
+      scale: {x: 16.357885, y: 17.107548, z: 25.256353}
+    - name: Cone.012
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0.17777732, y: 1.3766257, z: 0.20444997}
+      rotation: {x: -0.5719321, y: -0.22731586, z: -0.18638824, w: 0.76582026}
+      scale: {x: 12.328535, y: 12.893535, z: 19.035086}
+    - name: Cone.013
+      parentName: EnemyMushroom(Clone)
+      position: {x: -0.35089302, y: 1.4955662, z: -0.39410338}
+      rotation: {x: -0.7530104, y: -0.24568523, z: -0.01326981, w: 0.61027706}
+      scale: {x: 16.357885, y: 17.107548, z: 25.256353}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -184,14 +288,15 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
